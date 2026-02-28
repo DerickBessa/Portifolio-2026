@@ -67,6 +67,7 @@ export const ContactSection = () => {
               </div>
             </div>
 
+
             {/* Social Links */}
             <div className="pt-8">
               <h4 className="font-medium mb-4">{t("contact.socialTitle")}</h4>

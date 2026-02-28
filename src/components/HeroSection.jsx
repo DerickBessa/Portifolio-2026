@@ -5,6 +5,32 @@ import { useTranslation } from "react-i18next";
 export const HeroSection = () => {
   const [isLightMode, setIsLightMode] = useState(false);
   const { t } = useTranslation();
+  
+  const scrollToProjects = (event, key) => {
+  event.preventDefault();
+  const target = document.querySelector(key);
+  if (!target) return;
+
+  const startPosition = window.pageYOffset;
+  const targetPosition = target.getBoundingClientRect().top;
+  const duration = 400; // duração em ms
+  let start = null;
+
+  const ease = (t) => t < 0.5 ? 2*t*t : -1+(4-2*t)*t; // easing in-out
+
+  const animateScroll = (timestamp) => {
+    if (!start) start = timestamp;
+    const elapsed = timestamp - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const amount = startPosition + targetPosition * ease(progress);
+    window.scrollTo(0, amount);
+    if (elapsed < duration) {
+      window.requestAnimationFrame(animateScroll);
+    }
+  };
+
+  window.requestAnimationFrame(animateScroll);
+};
 
   useEffect(() => {
     const html = document.documentElement;
@@ -50,7 +76,7 @@ export const HeroSection = () => {
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#projects" className="cosmic-button">
+            <a href="#projects"  onClick={(event) => scrollToProjects(event, "#projects")}className="cosmic-button">
               {t("hero.viewWorkButton")}
             </a>
           </div>

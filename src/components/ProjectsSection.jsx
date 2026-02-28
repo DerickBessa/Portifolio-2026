@@ -80,14 +80,33 @@ export const ProjectsSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-3">
           <a
             href="https://github.com/DerickBessa"
             target="_blank"
-            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            className="w-fit flex items-center mx-auto gap-2 px-6 py-2 rounded-full border border-primary text-primary hover:cosmic-button transition-colors duration-300"
           >
             {t("projects.button")} <ArrowRight size={16} />
           </a>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center mb-4">
+                    {/* Botão para CV PT-BR */}
+                    <a 
+                href="https://cv-resumes.vercel.app/BR/resume-ptbr.html" 
+                target="_blank" 
+                className="px-6 py-2 cosmic-button hover:bg-primary/10 transition-colors duration-300"
+            >
+                {t("about.cv.pt")}
+            </a>
+
+                {/* Botão para CV English */}
+            <a 
+                href="https://cv-resumes.vercel.app/english/resume.html" 
+                target="_blank" 
+                className="px-6 py-2 cosmic-button hover:bg-primary/10 transition-colors duration-300"
+            >
+                {t("about.cv.en")}
+            </a>
         </div>
       </div>
     </section>

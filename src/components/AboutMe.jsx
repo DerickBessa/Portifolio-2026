@@ -4,6 +4,32 @@ import { useTranslation } from "react-i18next"
 export const AboutSection = () => {
   const { t } = useTranslation()
 
+  const scrollToSection = (event, selector) => {
+  event.preventDefault();
+  const target = document.querySelector(selector);
+  if (!target) return;
+
+  const startPosition = window.pageYOffset;
+  const targetPosition = target.getBoundingClientRect().top;
+  const duration = 400; // duração em ms
+  let start = null;
+
+  const ease = (t) => t < 0.5 ? 2*t*t : -1 + (4 - 2*t)*t; // easing in-out
+
+  const animateScroll = (timestamp) => {
+    if (!start) start = timestamp;
+    const elapsed = timestamp - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const amount = startPosition + targetPosition * ease(progress);
+    window.scrollTo(0, amount);
+    if (elapsed < duration) {
+      window.requestAnimationFrame(animateScroll);
+    }
+  };
+
+  window.requestAnimationFrame(animateScroll);
+};
+
   return (
     <section id="about" className="py-25 px-4 relative">
       <div className="container mx-auto max-w-5xl">
@@ -27,8 +53,12 @@ export const AboutSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center items-center">
-                <a href="#contact" className="cosmic-button">
-                    {t("about.contactButton")}
+                <a
+                href="#contact"
+                onClick={(event) => scrollToSection(event, "#contact")}
+                className="cosmic-button"
+                >
+                {t("about.contactButton")}
                 </a>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center mb-4">
