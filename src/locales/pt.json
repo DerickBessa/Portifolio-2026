@@ -4,7 +4,8 @@
     "greeting": "Olá, Eu sou",
     "firstName": "Derick",
     "lastName": "Bessa",
-    "description": "Transformo ideias em realidade com tecnologia moderna. Uso IA e desenvolvimento fullstack para criar soluções funcionais e bonitas.",
+    "subtitle": "Desenvolvedor Full Stack & Especialista em IA",
+    "description": "Transformo ideias em soluções digitais modernas, unindo Inteligência Artificial e desenvolvimento Fullstack para criar produtos funcionais, escaláveis e visualmente impactantes.",
     "viewWorkButton": "Veja meu trabalho",
     "scroll": "Deslize"
   },
