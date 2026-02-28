@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export const ContactSection = () => {
@@ -73,13 +73,14 @@ export const ContactSection = () => {
               <h4 className="font-medium mb-4">{t("contact.socialTitle")}</h4>
               <div className="flex space-x-4 justify-center">
                 <a href="https://www.linkedin.com/in/derickbessa/" target="_blank" rel="noreferrer" className="hover:scale-110 transition-transform duration-300">
-                  <Linkedin className="h-6 w-6 text-primary hover:text-secondary-foreground transition-colors"/>
+                  <Linkedin className="h-9 w-9 text-primary hover:text-secondary-foreground transition-colors"/>
                 </a>
-                <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
                 <a href="https://www.instagram.com/_dbessa/" target="_blank" rel="noreferrer" className="hover:scale-110 transition-transform duration-300">
-                  <Instagram className="h-6 w-6 text-primary hover:text-secondary-foreground transition-colors"/>
+                  <Instagram className="h-9 w-9 text-primary hover:text-secondary-foreground transition-colors"/>
                 </a>
-                
+                <a href="https://www.github.com/DerickBessa" target="_blank" rel="noreferrer" className="hover:scale-110 transition-transform duration-300">
+                  <Github className="h-9 w-9 text-primary border-2 p-0.5 border-primary rounded-full hover:text-secondary-foreground transition-colors"/>
+                </a>
               </div>
             </div>
           </div>
