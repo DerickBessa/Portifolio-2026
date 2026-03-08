@@ -66,8 +66,8 @@
     "tanalista": {
       "description": "Aplicativo que gerencia todos os recursos e organização de eventos, incluindo Data, Convidados, Local e permite entrada de convidados via QR Code, biometria ou apenas ID, com validação em tempo real e geração de relatórios seguros."
     },
-    "bessa": {
-      "description": "Aplicativo de linha de comando que gerencia eventos e repertórios musicais, armazena dados no SQLite e gera relatórios em PDF para clientes."
+    "landingPage": {
+      "description": "Landing page desenvolvida para apresentar de forma clara e moderna os serviços da Gomes Araujo. O projeto foca em design responsivo, boa experiência do usuário e uma estrutura simples e eficiente para divulgação online. Landing pages são páginas focadas em apresentar informações e incentivar a interação do visitante com o serviço ou produto."
     }
   },
 

@@ -15,16 +15,16 @@ const projects = [
     title: "TaNaLista",
     descriptionKey: "projects.tanalista.description",
     image: "/projects/tanalista.png",
-    tags: ["Java&SpringBoot","ReactNative","Computer Vision","YOLO&MediaPipe", "BiometricDetection(Face&Hand)"],
+    tags: ["Node.js","ReactNative","Computer Vision","PostgreSQL", "Typescript" ,"YOLO&MediaPipe", "BiometricDetection(Face&Hand)"],
     Github: "https://github.com/DerickBessa/TaNaLista"
   },
   {
     id: 3,
-    title: "BESSA",
-    descriptionKey: "projects.bessa.description",
-    image: "/projects/BESSA.png",
-    tags: ["SQLite", "Python"],
-    Github: "https://github.com/DerickBessa/B.E.S.S.A."
+    title: "LandingPage - Escritório",
+    descriptionKey: "projects.landingPage.description",
+    image: "/projects/gomesaraujo.png",
+    tags: ["React.js", "Next.js" , "Tailwind CSS", "Javascript"],
+    Github: "https://github.com/DerickBessa/LandingPage-GomesAraujo"
   }
 ];
 

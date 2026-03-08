@@ -63,8 +63,8 @@
     "tanalista": {
       "description": "App that manages all event organization and features, including Date, Guests, Place, and allows guest entry via QR Code, biometrics, or only ID, with real-time validation and secure report generation."
     },
-    "bessa": {
-      "description": "Command-line app that manages events and musical repertoires, stores data in SQLite, and generates PDF reports for clients."
+    "landingPage": {
+      "description": "Landing page developed to present the services of Gomes Araujo in a clear and modern way. The project focuses on responsive design, good user experience, and a simple and efficient structure for online promotion. Landing pages are designed to present information and encourage visitors to interact with a service or product."
     }
   },
 
