@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "LandingPage - Escritório",
+    title: "LandingPage - Gomes&Araujo",
     descriptionKey: "projects.landingPage.description",
     image: "/projects/gomesaraujo.png",
     tags: ["React.js", "Next.js" , "Tailwind CSS", "Javascript"],
